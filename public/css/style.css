@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#header {
+  background-color: #538DF0;
+  max-width: 375px;
+  margin: auto;
+  height: 300px; }
+  #header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 30px 0; }
+  #header img {
+    width: 100px;
+    height: 100px; }
+  #header .aksi {
+    text-align: center; }
+    #header .aksi ul {
+      list-style: none; }
+      #header .aksi ul a {
+        color: #ffffff; }
+      #header .aksi ul li {
+        display: inline-block;
+        padding: 10px 25px;
+        cursor: pointer; }
+
+#aksi {
+  background-color: #FAFAFA;
+  max-width: 375px;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  #aksi .kotak {
+    width: 300px;
+    background-color: #ffffff;
+    margin-top: -50px;
+    padding: 20px;
+    position: absolute; }
+    #aksi .kotak .tombol {
+      text-align: center;
+      margin-top: 20px; }
+
+body {
+  background: #FAFAFA; }
+
+section.header {
+  background: #538DF0;
+  text-align: center;
+  display: flex; }
+  section.header img {
+    width: 50px;
+    height: 50px; }
+  section.header nav {
+    margin: auto;
+    max-width: 375px; }
+  section.header a {
+    color: #ffffff; }
+
+section.content {
+  background: #ffffff;
+  margin: auto;
+  max-width: 375px;
+  height: 500px;
+  padding: 10px; }
+  section.content a {
+    color: #538DF0;
+    text-decoration: none; }
+  section.content #cek_kesehatan, section.content #cari_dokter, section.content #cek_jadwal {
+    margin: 5px 0;
+    cursor: pointer;
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
+    section.content #cek_kesehatan h3, section.content #cari_dokter h3, section.content #cek_jadwal h3 {
+      font-size: 15px; }
+    section.content #cek_kesehatan img, section.content #cari_dokter img, section.content #cek_jadwal img {
+      width: 60px;
+      height: 60px; }
+
+#diagnose {
+  background: #ffffff;
+  margin: auto;
+  max-width: 375px;
+  height: 700px;
+  padding: 10px; }
+  #diagnose #page-1 {
+    text-align: center;
+    margin-top: 100px; }
+
+h1 {
+  font-size: 24px; }
+
+.cari_dokter h2 {
+  font-size: 24px; }
+.cari_dokter p {
+  background-color: red; }
+
+/*# sourceMappingURL=style.css.map */
