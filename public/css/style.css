@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: roboto; }
+
 #header {
   background-color: #538DF0;
   max-width: 375px;
   margin: auto;
-  height: 300px; }
+  min-height: 300px; }
   #header .logo {
     display: flex;
     align-items: center;
@@ -28,10 +31,10 @@
         cursor: pointer; }
 
 #aksi {
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   max-width: 375px;
   margin: auto;
-  height: 300px;
+  min-height: 434px;
   display: flex;
   justify-content: center;
   flex-direction: row; }
@@ -40,7 +43,9 @@
     background-color: #ffffff;
     margin-top: -50px;
     padding: 20px;
-    position: absolute; }
+    position: absolute;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px; }
     #aksi .kotak .tombol {
       text-align: center;
       margin-top: 20px; }
@@ -51,7 +56,8 @@ body {
 section.header {
   background: #538DF0;
   text-align: center;
-  display: flex; }
+  display: flex;
+  min-height: 100px; }
   section.header img {
     width: 50px;
     height: 50px; }
@@ -65,7 +71,7 @@ section.content {
   background: #ffffff;
   margin: auto;
   max-width: 375px;
-  height: 500px;
+  min-height: 634px;
   padding: 10px; }
   section.content a {
     color: #538DF0;

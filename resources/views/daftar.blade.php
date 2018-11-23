@@ -16,22 +16,35 @@
         <a href="{{url('/masuk')}}"> <li>Masuk</li></a>
         <a href="{{url('/daftar')}}"><li>Daftar</li></a>
         </ul>
+        @if(count($errors) > 0)
+          @foreach($errors->all() as $error)
+            <p class="alert alert-danger">{{$error}}</p>
+          @endforeach
+        @endif
       </div>
     </section>
     <section id="aksi">
       <div class="kotak">
-        <form>
-          <div class="form-group">
+        <form action="{{url('/daftar')}}" method="post">
+            {{csrf_field()}}
+            <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="username">Nama</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nama" name="nama">
+          </div>
+          <div class="form-group">
+            <label for="username">No HP</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="No HP" name="no_hp">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" class="form-control" placeholder="Password" name="password">
           </div>
           <div class="tombol">
-          <a href="{{url('/dashboard')}}">  <button type="button" class="btn btn-primary">Daftar</button></a>
+          <button type="submit" class="btn btn-primary">Daftar</button>
           </div>
         </form>
       </div>
